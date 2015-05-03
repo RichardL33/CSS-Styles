@@ -1,0 +1,50 @@
+button {
+  margin: 100px 25%;
+  position: relative;
+  border: 0;
+  outline: 0;
+  height: 50px;
+  text-transform: uppercase;
+  color:white;
+  background: #ef3f37;
+  transition: background 0.25s ease;
+ }
+
+ button:before {
+   position: absolute;
+   content: "";
+   left: -20px;
+   width: 0px;
+   height: 0px;
+   bottom: 0px;
+   border-bottom: 50px solid transparent;
+   border-right: 20px solid #ef3f37;
+   transition: border 0.25s ease;
+   }
+
+ button:after {
+  position: absolute;
+  content: "";
+  right: -20px;
+  width: 0px;
+  height: 0px;
+  bottom: 0;
+  border-bottom: 50px solid transparent;
+  border-left: 20px solid #ef3f37;
+  transition: border 0.25s ease;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+button:hover,
+button:hover:before {
+  // background: red;
+}
+
+button:hover:after {
+    // border-left: 20px solid red;
+  }
+}
